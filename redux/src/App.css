@@ -3,17 +3,16 @@
 
 .wraper{
 	color:rgb(44, 35, 8);
+	text-align: center;
 }
 
 .logo{
-	text-align: center;
 	font-size: 45px;
 	margin-top: 150px;
 	margin-bottom: 20px;
 }
 
 .cash{
-text-align: center;
 font-size: 30px;
 margin-bottom: 20px;
 }
@@ -39,7 +38,13 @@ margin-bottom: 20px;
 	padding: 9px 29px;
 }
 
-.empty_logo{
-text-align: center;
+
+.users{
+	
+	font-size: 20px;
+	border:1px solid black;
+}
+
+.empty-logo{
 font-size: 20px;
 }

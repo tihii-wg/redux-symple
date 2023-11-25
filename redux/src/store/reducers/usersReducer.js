@@ -1,4 +1,4 @@
-import { ADD__USERS, REMOVE__CASH, REMOVE__USERS } from "../constantes"
+import { ADD__USERS, REMOVE__USERS } from "../constantes"
 
 const initialState = {
 	users: []
@@ -9,11 +9,11 @@ export const usersReducer = (state = initialState, action) => {
 		case ADD__USERS:
 			return { ...state, users: [...state.users, action.payload] }
 		case REMOVE__USERS:
-			return state.users.map((u) => u.id === action.payload)
+			return { ...state, users: state.users.filter(u => u.id !== action.payload) }
 		default:
 			return state
 	}
 }
 
-export const addUsersAction =(payload)=>({ type: ADD__USERS, payload })
-export const removeUsersAction =()=>({})
+export const addUsersAction = (payload) => ({ type: ADD__USERS, payload })
+export const removeUsersAction = (payload) => ({ type: REMOVE__USERS, payload })
