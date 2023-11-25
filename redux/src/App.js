@@ -43,7 +43,7 @@ function App() {
 				<button>Remove users.</button>
 			</div>
 			{users.length === 0 ?
-				<h2 className='empty_logo'>No users.</h2> :
+				<h2 className='empty-logo'>No users.</h2> :
 				<div>{users.name}</div>}
 
 		</div>
