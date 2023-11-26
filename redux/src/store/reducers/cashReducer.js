@@ -7,7 +7,7 @@ const initialState = {
 export const cashReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case ADD__CASH:
-			return { ...state, cash: state.cash + action.payload }
+			return {...state, cash: state.cash + action.payload } 
 		case GET__CASH:
 			return { ...state, cash: state.cash - action.payload }
 		default:
