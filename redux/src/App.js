@@ -45,15 +45,11 @@ function App() {
 				<button>Remove users.</button>
 			</div>
 			{users.length > 0 ?
-				<div>
+				<div className='users-container'>
 					{users.map(u => <div className='users' key={u.id} onClick={() => { removeUser(u.id) }}>{u.name}</div>)}
 				</div> :
 				<h2 className='empty-logo'>No users.</h2>
 			}
-
-
-
-
 		</div >
 	)
 }
